@@ -1,0 +1,191 @@
+body {
+width: 100%;
+background-color: #003565;
+background-size: cover;
+margin: 0 auto;
+}
+
+.group {
+position: relative;
+top: 0px;
+size: relative;
+width: 110px;
+height: 110px;
+margin-left: 5px;
+margin-right: 5px;
+font-size: 15px;
+border-color: #002e58ff;
+color: white;
+border-width: 0;
+border-radius: 15px;
+background: #003565;
+box-shadow:  5px 5px 10px #002d56, 
+             -5px -5px 10px #003d74;
+border-style: solid;
+outline: none;
+vertical-align: bottom;
+}
+
+.group:active{
+  border-radius: 15px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+  color: #1c77c3;
+}
+
+.input {
+  display: block;
+  position: relative;
+  top: 0px;
+  size: relative;
+  width: 496px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: white;
+  border-color: #003565;
+  border-width: 10px;
+  border-radius: 15px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+  border-style: solid;
+  outline: none;
+  text-align: center;
+}
+
+#main {
+height: auto;
+margin: 0 auto;
+margin-top: 200px;
+}
+
+#main2 {
+height: auto;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+#logo {
+display: block;
+height: 75px;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+
+#icons {
+display: block;
+margin-top: 10px;
+width: 496px;
+height: auto;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+
+.icons2 {
+display: block;
+width: 380px;
+height: auto;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#top {
+ position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 55px;
+  background-color: #003565;
+  box-shaddow: 5px 0px 10px #002d56;
+}
+
+#about {
+display: block;
+position: relative;
+top: 5px;
+size: relative;
+width: 500px;
+height: 80px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15px;
+margin-bottom: 25px;
+font-size: 15px;
+color: white;
+border-color: #003565;
+border-width: 0px;
+border-radius: 15px;
+background: #003565;
+box-shadow:  5px 5px 10px #002d56, 
+             -5px -5px 10px #003d74;
+border-style: solid;
+outline: none;
+}
+
+#about:active {
+  border-radius: 15px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+  color: #1c77c3;
+}
+
+.title {
+text-align: center;
+margin: 0 auto;
+font-family: Arial;
+color: white;
+}
+
+li #topLogo {
+height: 45px;
+margin-top: 5px;
+margin-left: 5px;
+margin-right: 5px;
+border-radius: 150px;
+background: #003565;
+box-shadow:  5px 5px 8px #002d56, 
+             -5px -5px 8px #003d74;
+}
+
+ul {
+position: relative;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+height: 100%;
+}
+
+li {
+float: left;
+height: 100%;
+}
+
+li .topButton {
+position: relative;
+bottom: 0;
+width: auto;
+height: 100%;
+border-style: solid;
+border-color: #00000000;
+border-radius: 15px;
+background: #003565;
+box-shadow: inset 5px 5px 10px #002d56, 
+            inset -5px -5px 10px #003d74;
+outline: none;
+color: white;
+}
+
+p {
+    text-align: center;
+margin: 0 auto;
+font-family: Arial;
+color: white;
+}
+    
