@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Windows info-->
+	<meta name="msapplication-TileImage" content="icon.png">
+	<meta name="msapplication-TileColor" content="#002e58">
+
+	<!--iOS info-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Nimbus">
+	<link rel="apple-touch-icon" href="icon.png">
+	
+	<!--Android info-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Security Services</title>
+	
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div class="top">
+            <img id="logo" src="icon1.png" />           
+           </div>
+    <div id="main">
+      <h1 class="title">Security Services</h1>
+    <div id="mail">
+    <h2 class="title">Password Managers</h2>
+    <div class="app_row">
+    <button type="button" class ="group3" onclick="window.open('https://1password.com')">1Password</button>
+    <button type="button" class ="group3" onclick="window.open('https://bitwarden.com')">BitWarden</button>
+    <button type="button" class ="group3" onclick="window.open('https://lastpass.com')">LastPass</button>
+    </div>
+    </div>
+    <div id="social">
+    <h2 class="title">Breach Checker</h2>
+    <button type="button" class="group3" onclick="window.open('https://haveibeenpwned.com')">Have I Been Pwned?</button>
+    <button type="button" class="group3" onclick="window.open('https://monitor.firefox.com')">Firefox Monitor</button>
+    </div>
+    <button class="donate" type="button" onclick="window.location.href = 'donate.html';">Donate</button>
+    </div>
+    <div id="spacer">
+    </div>
+    <div class="bottom">
+        <div id="buttons">
+        <img class="group" id="pswdgen" src="passicon.png" onclick="window.location.href = 'mobile.html';"></img>
+        <img class="group" id="finder" src="privicon.png" onclick="window.location.href='privacy.html';"></img>
+        <img src="breachicon.png" class="group" id="monitor" onclick="window.location.href = 'breach.html';"></img>
+        <img src="scamicon.png" class="group" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>
+        </div>
+    </div>
+    </div>
+  </body>

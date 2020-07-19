@@ -16,36 +16,37 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Nymbus Home </title>
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
 	<link rel="manifest" href="manifest.json">
     </head>
     <body>
-        <nav id="top">
-            <ul>
-            <li><img id="topLogo" src="icon1.png" onclick="window.location.href = 'index.html';"></img></li>
-            <li><button type="button" class="topButton" onclick="window.location.href = 'pswdgen.html';">Passphrase Generator</button></li>
-            <li><button type="button" class="topButton" onclick="window.location.href = 'privacy.html';">Privacy services</button></li>
-            <li><button type="button" class="topButton" onclick="window.location.href = 'breach.html';">Security Services</button></li>
-            <li><button type="button" class="topButton" onclick="window.open('https://phishingquiz.withgoogle.com')">Scam Email Quiz</button></li>
-            <li><button type="button" class="topButton" onclick="window.open('https://info.nimbusapp.tech')">About</button></li>
-            </ul>
-        </nav>
-        <div id="main">
+        <div class="top">
+            <img id="logo" src="icon1.png" />           
+           </div>
+        <div class="main">
         <div id="icons" ng-app = "pswdgen" ng-controller="generate">
             <h1 class="title">{{passphrase}}</h1>
             <input class="input" type=text ng-model="word1" placeholder="Enter Word 1">
             <input class="input" type=text ng-model="word2" placeholder="Enter Word 2">
             <input class="input" type=text ng-model="word3" placeholder="Enter Word 3">
-        <button id="about" type=button ng-click="passphrase = word1 + word2 + word3 + num">Generate</button>
+            <button class="group3" type=button ng-click="passphrase = word1 + word2 + word3 + num">Generate</button>
+	    <button class="donate" type="button" onclick="window.location.href = 'donate.html';">Donate</button>
         <script>
             var app = angular.module('pswdgen', []);
 
             app.controller('generate', function ($scope){
                 $scope.num = Math.floor((Math.random() * 99) + 1);
-                $scope.passphrase = "Please enter three words into the fields bellow: ";
+                $scope.passphrase = "Passphrase Generator ";
             });
         </script>
+        </div>
+    </div>
+    <div class="bottom">
+        <div id="buttons">
+        <img class="group" id="pswdgen" src="passicon.png" onclick="window.location.href = 'mobile.html';"></img>
+        <img class="group" id="finder" src="privicon.png" onclick="window.location.href='privacy.html';"></img>
+        <img src="breachicon.png" class="group" id="monitor" onclick="window.location.href = 'breach.html';"></img>
+        <img src="scamicon.png" class="group" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>
         </div>
     </div>
     </body>
