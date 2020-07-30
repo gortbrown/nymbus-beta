@@ -32,17 +32,6 @@
             <button class="group" type=button ng-click="passphrase = word1 + word2 + word3 + num">Generate</button>
 	    <button class="donate" type="button" onclick="window.location.href = 'donate.html';">Donate</button>
         <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('/mobile/sw.js').then(function(registration) {
-                        // Registration was successful
-                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                    }, function(err) {
-                        // registration failed :(
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-                });
-            }
             var app = angular.module('pswdgen', []);
 
             app.controller('generate', function ($scope){
