@@ -39,6 +39,11 @@ background-image: url("/mobile/passicon.png");
   width: 100%;
 }
 
+#spacer2 {
+  height: 35px;
+  width: 100%;
+}
+
 .app_row {
   position:relative;
 	width: auto;
@@ -47,14 +52,14 @@ background-image: url("/mobile/passicon.png");
 }
 	
 
-.group {
+.nav {
 position: static;
 top: 0;
 size: relative;
 width: 24%;
 height: 70px;
 margin-left: auto;
-margin-top: 2.5px;
+margin-top: 5px;
 margin-right: auto;
 font-size: 15px;
 border-width: 0;
@@ -65,6 +70,32 @@ border-radius: 50px;
 text-align: center;
 outline: none;
 color: white;
+}
+
+.nav-idle{
+position: static;
+top: 0;
+size: relative;
+width: 24%;
+height: 70px;
+margin-left: auto;
+margin-top: 5px;
+margin-right: auto;
+font-size: 15px;
+border-width: 0;
+border-radius: 50px;
+background: linear-gradient(145deg, #00305b, #00396c);
+box-shadow:  5px 5px 0px #003464, 
+             -5px -5px 0px #003666;
+text-align: center;
+outline: none;
+color: white;
+}
+
+.bmcdiv{
+width: 216px;
+margin-left: auto;
+margin-right: auto;
 }
 
   #buttons {
@@ -80,12 +111,12 @@ color: white;
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 75px;
+  height: 80px;
 background: #003565;
 box-shadow: 5px 0px 10px #002d56;
 }
 
-.group3 {
+.group {
 position: relative;
 top: 10px;
 size: relative;
@@ -111,10 +142,10 @@ outline: none;
 positon: relative;
 top: 10px;
 size: relative;
-width:10%;
+width:20%;
 height: 45px;
-margin-left: 45%;
-margin-right: 45%;
+margin-left: 40%;
+margin-right: 40%;
 margin-bottom: 20;
 font-size: 15px;
 text-align: center;
@@ -135,17 +166,23 @@ outline: none;
   box-shadow: inset 5px 5px 6px #002d56, 
               inset -5px -5px 6px #003d74;
   color: #1c77c3;;
-  background-image: none;
 
 }
 
-.group3:active {
+nav-idle:active {
+border-radius: 50px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+  color: #1c77c3;;
+}
+
+.donate:active {
   border-radius: 50px;
   background: #003565;
   box-shadow: inset 5px 5px 6px #002d56, 
               inset -5px -5px 6px #003d74;
   color: #1c77c3;;
-
 }
 
 .input {
@@ -208,6 +245,7 @@ box-shadow: 5px 0px 10px #002d56;
 .main{
   width: 94%;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 #back {
@@ -236,6 +274,7 @@ h1 {
   top: 0;
 	text-align: center;
 	margin: 0 auto;
+	margin-top: 10px;
 	font-family: Arial;
 	color: white;
 }
