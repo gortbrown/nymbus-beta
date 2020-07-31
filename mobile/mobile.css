@@ -40,7 +40,7 @@ background-image: url("/mobile/passicon.png");
 }
 
 #spacer2 {
-  height: 35px;
+  height: 25px;
   width: 100%;
 }
 
@@ -192,6 +192,28 @@ border-radius: 50px;
   size: relative;
   width: 100%;
   height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: white;
+  border-color: #003565;
+  border-width: 10px;
+  border-radius: 15px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+  border-style: solid;
+  outline: none;
+  text-align: center;
+}
+
+.tips {
+  display: block;
+  position: relative;
+  top: 0px;
+  size: relative;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
