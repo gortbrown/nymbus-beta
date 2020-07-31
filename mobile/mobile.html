@@ -1,0 +1,64 @@
+<! DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <head>
+        <!--Windows info-->
+	<meta name="msapplication-TileImage" content="icon.png">
+	<meta name="msapplication-TileColor" content="#002e58">
+
+	<!--iOS info-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title content="Nymbus">
+	<link rel="apple-touch-icon" href="icon.png">
+	
+	<!--Android info-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Nymbus Home </title>
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="top">
+            <img id="logo" src="icon1.png" />           
+           </div>
+        <div class="main">
+        <div id="icons" ng-app = "pswdgen" ng-controller="generate">
+            <h1 class="title">{{passphrase}}</h1>
+            <input class="input" type=text ng-model="word1" placeholder="Enter Word 1">
+            <input class="input" type=text ng-model="word2" placeholder="Enter Word 2">
+            <input class="input" type=text ng-model="word3" placeholder="Enter Word 3">
+            <button class="group" type=button ng-click="passphrase = word1 + word2 + word3 + num">Generate</button>
+	    <button class="donate" type="button" onclick="window.location.href = 'donate.html';">Donate</button>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/mobile/sw.js').then(function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+            var app = angular.module('pswdgen', []);
+
+            app.controller('generate', function ($scope){
+                $scope.num = Math.floor((Math.random() * 99) + 1);
+                $scope.passphrase = "Passphrase Generator ";
+            });
+        </script>
+        </div>
+    </div>
+    <div class="bottom">
+        <div id="buttons">
+        <img class="nav" id="pswdgen" src="passicon.png" onclick="window.location.href = 'mobile.html';"></img>
+        <img class="nav-idle" id="finder" src="privicon.png" onclick="window.location.href='privacy.html';"></img>
+        <img src="breachicon.png" class="nav-idle" id="monitor" onclick="window.location.href = 'breach.html';"></img>
+        <!--<img src="scamicon.png" class="nav-idle" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>-->
+        </div>
+    </div>
+    </body>
+</html>
