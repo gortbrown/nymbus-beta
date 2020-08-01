@@ -44,6 +44,11 @@ background-image: url("/mobile/passicon.png");
   width: 100%;
 }
 
+#spacer3 {
+  height: 55px;
+  width: 100%;
+}
+
 .app_row {
   position:relative;
 	width: auto;
@@ -139,14 +144,13 @@ outline: none;
 }
 
 .donate {
-positon: relative;
 top: 10px;
 size: relative;
 width:20%;
 height: 45px;
 margin-left: 40%;
 margin-right: 40%;
-margin-bottom: 20;
+margin-bottom: 0;
 font-size: 15px;
 text-align: center;
 border-color: #00000000;
@@ -216,6 +220,7 @@ border-radius: 50px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
   font-size: 15px;
   color: white;
   border-color: #003565;
