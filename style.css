@@ -5,6 +5,19 @@ background-size: cover;
 margin: 0 auto;
 }
 
+#tips {
+display: block;
+margin-top: 10px;
+width: 50%;
+height: auto;
+margin: 0 auto;
+margin-bottom: 15px;
+border-radius: 15px;
+  background: #003565;
+  box-shadow: inset 5px 5px 6px #002d56, 
+              inset -5px -5px 6px #003d74;
+}
+
 .group {
 position: relative;
 top: 0px;
