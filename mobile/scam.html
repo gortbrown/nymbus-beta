@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+<!--Windows info-->
+ <meta name="msapplication-TileImage" content="icon.png">
+ <meta name="msapplication-TileColor" content="#ff751a">
+
+<!--iOS info-->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <meta name="apple-mobile-web-app-title" content="Nymbus">
+ <link rel="apple-touch-icon" href="icon.png">
+<!--Android info-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Privacy Tools</title>
+ 
+ <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" type="text/css" href="mobile.css">
+ <meta name="theme-color" content="#000000"/>
+</head>
+<body ng-app="scamchecker" ng-controller="check">
+    <div class="top">
+        <img id="logo" src="icon1.png" />           
+    </div>
+    <div class="main">
+        <h1 class="title">Scam Checker</h1>
+        <p>This tool will take information from any email to determine whether or not an email is a scam or not.</p>
+        <button type="button" class="group" onclick="window.location.href = 'questions.html';">Start</button>
+        <div class="tips">
+            <div id="spacer2"></div>
+            <div class="main">
+             <h2>How this works</h2>
+             <p>This takes information from the email you received to determine if it is a scam. It uses info like the sender’s email, and checks it against other emails from companies in our database, or an email from your workplace if its from a coworker. It will then offer tips to avoid falling for scams to make them easier to spot in the future.</p>
+            </div>
+            <div id="spacer2"></div>
+        </div>
+    </div>
+<div id="spacer">
+</div>
+<div class="bottom">
+    <div id="buttons">
+    <img class="nav-idle" id="finder" src="passicon.png" onclick="window.location.href='index.html';"></img>
+    <img class="nav-idle" id="finder" src="privicon.png" onclick="window.location.href='privacy.html';"></img>
+    <img src="breachicon.png" class="nav" id="monitor" onclick="window.location.href = 'security.html';"></img>
+    <!--<img src="scamicon.png" class="nav-idle" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>-->
+    </div>
+</div>
+</body>
+</html>
