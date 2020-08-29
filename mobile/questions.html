@@ -14,7 +14,7 @@
 <!--Android info-->
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Privacy Tools</title>
+ <title>Scam Checker</title>
  
  <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" type="text/css" href="mobile.css">
@@ -27,48 +27,18 @@
     <div class="main" ng-app="scamchecker" ng-controller="check">
         <h1 class="title" id="question">Was the email sent by a person or a company?</h1>
         <input class="input" type="text" id="answer" placeholder="Enter 'Person' or 'Company'"/>
-        <button type="button" class="group" id="next" onclick="process()">Next</button>
+        <button type="button" class="group" id="next">Next</button>
     </div>
 <div id="spacer">
 </div>
 <div class="bottom">
     <div id="buttons">
     <img class="nav-idle" id="finder" src="passicon.png" onclick="window.location.href='index.html';"></img>
-    <img class="nav-idle" id="finder" src="privicon.png" onclick="window.location.href='privacy.html';"></img>
-    <img src="breachicon.png" class="nav" id="monitor" onclick="window.location.href = 'security.html';"></img>
+    <img class="nav" id="finder" src="scamicon.png" onclick="window.location.href='scam.html';"></img>
+    <img src="breachicon.png" class="nav-idle" id="monitor" onclick="window.location.href = 'security.html';"></img>
     <!--<img src="scamicon.png" class="nav-idle" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>-->
     </div>
 </div>
 </body>
-<script>
-    function process(){
-        if (document.getElementById("answer").value == "Person" || document.getElementById("answer").value == "person"){
-            document.getElementById("question").innerHTML = "Do you know the person who sent this email?";
-            document.getElementById("answer").placeholder = "Yes or No";
-        }
-        else if (document.getElementById("answer").value == "Company" || document.getElementById("answer").value == "company"){
-            document.getElementById("question").innerHTML = "Do you work for this company?";
-            document.getElementById("answer").placeholder = "Yes or No";
-        }
-        else if ((document.getElementById("answer").value == "Yes" || document.getValueById("answer").value == "yes") && document.getValueById("question").innerHTML == "Do you know the person who sent this email?"){
-            document.getElementById("question").innerHTML = "Are you certain this email is from this person? Maybe contact them through another means of communication if possible to ask.";
-        }
-        else if ((document.getElementById("answer").value == "No" || document.getValueById("answer").value == "no") && document.getValueById("question").innerHTML == "Do you know the person who sent this email?"){
-            document.getElementById("question").innerHTML = "Is this email regarding something you were expecting an email about?";
-        }
-        else if ((document.getElementById("answer").value == "Yes" || document.getValueById("answer").value == "yes") && document.getValueById("question").innerHTML == "Are you certain this email is from this person? Maybe contact them through another means of communication if possible to ask."){
-            window.location.href = "scamresult.html";
-        }
-        else if ((document.getElementById("answer").value == "No" || document.getValueById("answer").value == "no") && document.getValueById("question").innerHTML == "Are you certain this email is from this person? Maybe contact them through another means of communication if possible to ask."){
-            window.location.href = "scamresultt.html";
-        }
-        else if ((document.getElementById("answer").value == "Yes" || document.getValueById("answer").value == "yes") && document.getValueById("question").innerHTML == "Is this email regarding something you were expecting an email about?"){
-            window.location.href = "scamresultt.html";
-        }
-        else if ((document.getElementById("answer").value == "No" || document.getValueById("answer").value == "no") && document.getValueById("question").innerHTML == "Is this email regarding something you were expecting an email about?"){
-            window.location.href = "scamresult.html";
-        }
-        document.getElementById("answer").value = "";
-    }
-</script>
+<script src=script.js></script>
 </html>
