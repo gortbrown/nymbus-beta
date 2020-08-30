@@ -335,3 +335,7 @@ a {
 color: white;
 margin: 0 auto;
 }
+
+#answer {
+  width: 97%
+}
