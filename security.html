@@ -17,12 +17,19 @@
  <title>Security Tools</title>
  
  <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" type="text/css" href="mobile.css">
+<link rel="stylesheet" type="text/css" href="style.css">
  <meta name="theme-color" content="#000000"/>
 </head>
 <body>
     <div class="top">
-        <img id="logo" src="icon1.png" />           
+      <nav>
+        <ul>
+        <li><img id="logo" src="icon1.png"/></li>
+        <li><img id="logo" class="nav" id="pswdgen" src="passicon.png" onclick="window.location.href = 'index.html';"></img></li>
+        <li><img id="logo" class="nav-idle" id="finder" src="scamicon.png" onclick="window.location.href='scam.html';"></img></li>
+        <li><img id="logo" src="breachicon.png" class="nav-idle" id="monitor" onclick="window.location.href = 'security.html';"></img></li>
+        </ul>
+       </nav>                      
     </div>
     <div class="main">
         <h1 class="title">Security Services</h1>
@@ -72,15 +79,5 @@
       </div>
         <button class="donate" type="button" onclick="window.location.href = 'donate.html';">Donate</button>
     </div>
-<div id="spacer">
-</div>
-<div class="bottom">
-    <div id="buttons">
-    <img class="nav-idle" id="finder" src="passicon.png" onclick="window.location.href='index.html';"></img>
-    <img class="nav-idle" id="finder" src="scamicon.png" onclick="window.location.href='scam.html';"></img>
-    <img src="breachicon.png" class="nav" id="monitor" onclick="window.location.href = 'security.html';"></img>
-    <!--<img src="scamicon.png" class="nav-idle" id="phishing" onclick="window.open('https://phishingquiz.withgoogle.com')"></img>-->
-    </div>
-</div>
 </body>
 </html>

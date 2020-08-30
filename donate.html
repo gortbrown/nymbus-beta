@@ -1,38 +1,61 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
-<head>
-	<title> Nymbus Donate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <head>
+        <!--Windows info-->
+	<meta name="msapplication-TileImage" content="icon.png">
+	<meta name="msapplication-TileColor" content="#002e58">
+
+	<!--iOS info-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title content="Nymbus">
+	<link rel="apple-touch-icon" href="icon.png">
+	
+	<!--Android info-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Donate </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<nav id="top">
-<ul>
-<li><img id="topLogo" src="icon1.png" onclick="window.location.href = 'index.html';"></img></li>
-<li><button type="button" class="topButton" onclick="window.location.href = 'pswdgen.html';">Passphrase Generator</button></li>
-<li><button type="button" class="topButton" onclick="window.location.href = 'privacy.html';">Privacy services</button></li>
-<li><button type="button" class="topButton" onclick="window.location.href = 'breach.html';">Security Services</button></li>
-<li><button type="button" class="topButton" onclick="window.open('https://phishingquiz.withgoogle.com')">Scam Email Quiz</button></li>
-<li><button type="button" class="topButton" onclick="window.open('donate.html')">Donate</button></li>
-</ul>
-</nav>
-<div id="main">
-<h1 class="title">Donate</h1>
-<div id="icons">
-<p>If you enjoy this app, then consider donating! At the moment, we are only taking crypto donations, but we are working on setting up other ways of donation that will be available soon.</p>
-<div id="main2">
-<h2 class="title">Dogecoin</h2>
-<p>DJjhuWY6iR9MHHpVgntRn8ciVcLsWX48Ee</p>
-</div>
-<div id="main2">
-<h2 class="title">Bitcoin</h2>
-<p>13NbnAWLb4m8UMSWGPQLZoZZZj33CNA6Ui</p>
-</div>
-<div id="main2">
-<h2 class="title">Paypal</h2>
-<p>Coming Soon...</p>
-</div>
-</div>
-</div>
-</div>
-</body>
+	<link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="top">
+            <nav>
+                <ul>
+                <li><img id="logo" src="icon1.png"/></li>
+                <li><img id="logo" class="nav" id="pswdgen" src="passicon.png" onclick="window.location.href = 'index.html';"></img></li>
+                <li><img id="logo" class="nav-idle" id="finder" src="scamicon.png" onclick="window.location.href='scam.html';"></img></li>
+                <li><img id="logo" src="breachicon.png" class="nav-idle" id="monitor" onclick="window.location.href = 'security.html';"></img></li>
+                </ul>
+               </nav>           
+           </div>
+        <div id="main">
+            <h1 class="title">Donate</h1>
+            <p>If you enjoy this app, then consider donating!</p>
+            <div id="spacer2"></div>
+            <div class="tips">
+                <div id="spacer2"></div>
+                <div id="main">
+                    <h2 class="title">Dogecoin</h2>
+                    <p>DJjhuWY6iR9MHHpVgntRn8ciVcLsWX48Ee</p>
+                </div>
+                <div id="spacer2"></div>
+                <div id="main">
+                    <h2 class="title">Bitcoin</h2>
+                    <p>13NbnAWLb4m8UMSWGPQLZoZZZj33CNA6Ui</p>
+                </div>
+                <div id="spacer2"></div>
+                <div id="main">
+                    <h2 class="title">Buy Me a Coffee!</h2>
+                    <div class="bmcdiv">
+                    <style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 15px 7px 10px !important;line-height: 35px !important;height:51px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#5F7FFF !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 15px 7px 10px !important;font-size: 20px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Arial', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style>
+                    <link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/groovy0nion"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:19px !important;">Buy me a coffee</span></a>
+                    </div>
+                </div>
+                <div id="spacer2"></div>
+            </div>
+            
+        </div>
+    </body>
 </html>
