@@ -1,4 +1,9 @@
 document.getElementById("next").addEventListener("click", personCompany);
+document.getElementById("answer").addEventListener("keyup", function (event){
+    if (event.key === 'Enter') {
+        document.getElementById("next").click;
+    }
+});
 
 function personCompany(){
     document.getElementById("next").removeEventListener("click", personCompany);
